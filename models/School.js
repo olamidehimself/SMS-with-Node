@@ -5,6 +5,10 @@ const SchoolSchema = new mongoose.Schema({
         type: String,
         required: true,
     },
+    user: {
+        type: momgoose.Schema.Types.ObjectId,
+        ref: 'user'
+    },
     email: {
         type: String,
         required: true
