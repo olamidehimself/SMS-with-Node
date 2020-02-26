@@ -36,4 +36,6 @@ const TeacherSchema = new mongoose.Schema({
         type: Date,
         default: Date.now
     }
-})
+});
+
+module.exports = Teacher = mongoose.model('teacher', TeacherSchema);

@@ -32,4 +32,6 @@ const SchoolSchema = new mongoose.Schema({
         type: Date,
         default: Date.now
     }
-})
+});
+
+module.exports = School = mongoose.model('school', SchoolSchema);
